@@ -10,33 +10,29 @@ html,
 }
 
 .card {
-    width: 30rem;
-    height: 35rem;
-    border-style: 2px solid black;
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 10px;
 }
 
-.cardname {
-    border-style: 2px solid black;
+.card-name {
     font-size: 2.2rem;
     margin-top: 1.2rem;
+    flex-direction: row;
 }
 
-.cardimage {
+.card-image {
     border-style: 2px solid black;
     width: 100%;
     height: 40%;
     object-fit: cover;
+    flex-direction: row;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     width: 30%;
     margin: 2rem;
     flex-direction: row;
     justify-content: space-evenly;
+
 }
