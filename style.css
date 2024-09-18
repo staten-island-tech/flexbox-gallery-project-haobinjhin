@@ -5,33 +5,41 @@ html,
     box-sizing: border-box;
     margin: 10px;
     padding: 10px;
-
-
 }
 
+
 .card {
-    display: flex;
+    text-align: center;
     border: 1px solid #000;
     align-items: center;
     justify-content: center;
-    flex: 0 0 33.33%;
+    flex: 0 0 29%;
     box-sizing: border-box;
+    width: auto;
+    height: 500px;
+    padding-top: 10px;
 
 }
 
-.cardname {
+.title {
     font-family: "Fascinate Inline", system-ui;
+    font-size: 20px;
+
 }
 
 .cardimage {
     border: 10px solid black;
     margin: 0;
     padding: 0;
+    height: 300px;
+    width: auto;
 
 }
 
-. .container {
+.container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 
 }
