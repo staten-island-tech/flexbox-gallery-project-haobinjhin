@@ -3,32 +3,34 @@ html,
 * {
     font-size: 10px;
     box-sizing: border-box;
-    margin: 10px;
-    padding: 10px;
+    margin: 20px 50px 0px 50px;
+    padding-top: 0px;
 }
 
 
 .card {
     text-align: center;
     border: 1px solid #000;
+    border-radius: 50px;
     align-items: center;
     justify-content: center;
-    flex: 0 0 29%;
+    flex: 0 0 25%;
     box-sizing: border-box;
+    height: 450px;
     width: auto;
-    height: 500px;
     padding-top: 10px;
 
 }
 
 .title {
-    font-family: "Fascinate Inline", system-ui;
+    font-family: "Sofadi One", system-ui;
     font-size: 20px;
+    font-style: normal;
 
 }
 
 .cardimage {
-    border: 10px solid black;
+    border: 3px solid goldenrod;
     margin: 0;
     padding: 0;
     height: 300px;
@@ -42,4 +44,25 @@ html,
     flex-direction: row;
     justify-content: center;
 
+}
+
+.description {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .cardimage {
+        width: 50%;
+        height: 50%;
+    }
 }
