@@ -3,26 +3,25 @@ html,
 * {
     font-size: 10px;
     box-sizing: border-box;
-    margin: 20px 50px 0px 50px;
+    margin: 20px 20px 0px 20px;
     padding-top: 0px;
     background-color: bisque;
 }
 
 
 .card {
-    text-align: center;
-    border: 1px solid #000;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    flex: 0 0 15%;
-    box-sizing: border-box;
+    padding: 0;
+    width: 350px;
+    max-width: 350px;
     height: 300px;
-    width: auto;
-    padding-top: 10px;
+    max-height: 300px;
+    border: 2px solid black;
+    overflow: hidden;
     background-color: rgb(163, 163, 194);
-
+    text-align: center;
+    border-radius: 20px;  
+    flex-direction: column;
+    
 
 
 }
@@ -32,18 +31,15 @@ html,
     font-size: 20px;
     font-style: normal;
     background-color: rgb(163, 163, 194);
-    padding-top: 5rem;
+    align-items: center;
 
 }
 
 .cardimage {
     margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 30px;
-    background-color: rgb(163, 163, 194);
+    width: 100%;
+    height: 200px;
+
 }
 
 .container {
@@ -51,6 +47,7 @@ html,
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    height: 200px;
 
 
 }
@@ -60,35 +57,39 @@ html,
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     background-color: rgb(163, 163, 194);
-    margin: 0 0 0 0;
+    margin: 0;
+    
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .container {
         flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 350px;
+        width: 90%;
+        max-width: 350px;
+        height: 100%;
+        flex-direction: column;
+        height: auto;
     }
 
-    .cardimage {
-        width: 20%;
-        height: 20%;
+    .cardimage{
+        width: 90%;
+        height: 90%;
         object-fit: cover;
     }
+
 }
 
 .animation {
     height: 2rem;
     width: 2rem;
     position: absolute;
-    animation: demo 5s infinite;
+
 }
 
 @keyframes demo {
-    0% {
-        left: 50%;
-        bottom
-    }
+
 }
