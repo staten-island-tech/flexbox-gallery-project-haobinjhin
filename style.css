@@ -15,9 +15,10 @@ html,
     border-radius: 50px;
     align-items: center;
     justify-content: center;
-    flex: 0 0 23%;
+    justify-content: space-between;
+    flex: 0 0 15%;
     box-sizing: border-box;
-    height: 450px;
+    height: 300px;
     width: auto;
     padding-top: 10px;
     background-color: rgb(163, 163, 194);
@@ -31,14 +32,15 @@ html,
     font-size: 20px;
     font-style: normal;
     background-color: rgb(163, 163, 194);
+    padding-top: 5rem;
 
 }
 
 .cardimage {
     margin: 0;
     padding: 0;
-    height: 350px;
-    width: 350px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     border-radius: 30px;
     background-color: rgb(163, 163, 194);
@@ -54,10 +56,11 @@ html,
 }
 
 .description {
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     background-color: rgb(163, 163, 194);
+    margin: 0 0 0 0;
 }
 
 @media screen and (max-width: 400px) {
@@ -73,5 +76,19 @@ html,
         width: 20%;
         height: 20%;
         object-fit: cover;
+    }
+}
+
+.animation {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    animation: demo 5s infinite;
+}
+
+@keyframes demo {
+    0% {
+        left: 50%;
+        bottom
     }
 }
