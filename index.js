@@ -1,4 +1,4 @@
-console.log("Hello World")
+//console.log("Hello World")
 
 //dont use var
 var x = 45;
@@ -22,7 +22,7 @@ function add(x,y){
 }
 
 //conditional statements
-let b = 3434;
+/* let b = 3434;
 if(b > 0){
     console.log("positive");
 } else if(b < 0){
@@ -31,7 +31,7 @@ if(b > 0){
     console.log("zero");
 } else{
     console.log("not a number");
-}
+} */
 
 function even(c){
     if(c%2 === 0){
@@ -41,7 +41,6 @@ function even(c){
     }
 }
 
-even(41);
 
 function bigger(a,b){
     if(a>b){
@@ -52,14 +51,24 @@ function bigger(a,b){
         console.log(a +" and " + b)
     }
 }
-bigger(50, 50)
 
 
 // x = y ? t : f
 // is x = to y if true print t if false print f
 function juice_or_beer(age) {
-    age = age === 21 ? "1 million beers" : "fruit juice";
+    age = age >= 21 ? "1 million beers" : "fruit juice";
     return age
 }
 
-console.log(juice_or_beer(20));
+console.log(juice_or_beer(21))
+
+
+let 
+
+function zooornot(animal){
+    animal = animal === "Herbivore" || ">50" ? "Zoo" : "Not Zoo";
+    return animal
+}
+
+console.log(zooornot())
+
