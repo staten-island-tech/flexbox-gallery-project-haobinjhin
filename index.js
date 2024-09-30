@@ -60,15 +60,18 @@ function juice_or_beer(age) {
     return age
 }
 
-console.log(juice_or_beer(21))
 
 
-let 
 
-function zooornot(animal){
-    animal = animal === "Herbivore" || ">50" ? "Zoo" : "Not Zoo";
-    return animal
+
+function zooornot(type,weight,preyorpred){
+    if (((type = "Herbivore") || (weight >50)) && (preyorpred = "Prey")){
+        return true
+    }else{
+        return false
+    }
 }
 
-console.log(zooornot())
+console.log(zooornot("Carnivore", 40, "Predator"))
+
 
