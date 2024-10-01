@@ -65,13 +65,22 @@ function juice_or_beer(age) {
 
 
 function zooornot(type,weight,preyorpred){
-    if (((type = "Herbivore") || (weight >50)) && (preyorpred = "Prey")){
+    if (((type === "Herbivore") || (weight <50)) && (preyorpred === "Prey")){
         return true
-    }else{
+    }else {
         return false
     }
 }
 
-console.log(zooornot("Carnivore", 40, "Predator"))
+console.log(zooornot("Carnivore", 100, "Prey"))
+
+function themepark(age, membership, resident){
+    if (((age <12) || (age >65)) && ((membership === "Yes") || (resident ==="Yes"))){
+        return true
+    }else {
+        return false
+    }
+}
+console.log(themepark(15,"NO","YES"))
 
 
